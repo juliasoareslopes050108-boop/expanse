@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expanse | Viva o Intenso</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MÚSICA
+    ========================== -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="audio/expanse.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" id="musicButton">
+        <span id="musicIcon">♫</span>
+        <span id="musicText">Ativar som</span>
+    </button>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header" id="inicio">
+
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                Expanse
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#experiencias">Experiências</a>
+                </li>
+
+                <li>
+                    <a href="#roteiro">Roteiro</a>
+                </li>
+
+                <li>
+                    <a href="#reserva">Reserva</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="floating-orb orb-one"></div>
+            <div class="floating-orb orb-two"></div>
+
+            <div class="hero-content container">
+
+                <div class="hero-text">
+
+                    <span class="hero-tag">
+                        VIVA O INTENSO • VIVA EXPANSE
+                    </span>
+
+                    <h1>
+                        Mais que um roteiro.
+                        <span>Uma experiência.</span>
+                    </h1>
+
+                    <p>
+                        Um dia para descobrir Boituva através da
+                        aventura, dos sabores, da cultura e da natureza.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#experiencias" class="btn primary-btn">
+                            Explorar experiência
+                        </a>
+
+                        <a href="#roteiro" class="btn outline-btn">
+                            Ver roteiro
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-info">
+
+                    <div>
+                        <strong>07:00</strong>
+                        <span>início</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div>
+                        <strong>17:00</strong>
+                        <span>encerramento</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="intro">
+
+            <div class="container intro-content">
+
+                <div class="intro-number">
+                    01
+                </div>
+
+                <div>
+
+                    <span class="section-label">
+                        UMA NOVA FORMA DE VIAJAR
+                    </span>
+
+                    <h2>
+                        Boituva em um único dia.
+                        <em>Inesquecível.</em>
+                    </h2>
+
+                    <p>
+                        A Expanse criou um roteiro pensado para quem
+                        quer conhecer diferentes lados de Boituva
+                        em uma única experiência.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             4 FORMAS DE SE APAIXONAR
+        ========================== -->
+
+        <section class="experiences" id="experiencias">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        DESCUBRA O ROTEIRO
+                    </span>
+
+                    <h2>
+                        4 formas de se apaixonar
+                        <span>por Boituva.</span>
+                    </h2>
+
+                    <p>
+                        Escolha uma experiência e descubra
+                        um pouco do que espera por você.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-layout">
+
+                    <!-- MENU -->
+
+                    <div class="experience-menu">
+
+                        <button
+                            class="experience-item active"
+                            data-category="aventura">
+
+                            <span class="experience-number">01</span>
+
+                            <div>
+                                <strong>Aventura</strong>
+                                <small>Para sentir o coração acelerar.</small>
+                            </div>
+
+                            <span class="experience-arrow">↗</span>
+
+                        </button>
+
+
+                        <button
+                            class="experience-item"
+                            data-category="sabores">
+
+                            <span class="experience-number">02</span>
+
+                            <div>
+                                <strong>Sabores</strong>
+                                <small>Porque viajar também é provar.</small>
+                            </div>
+
+                            <span class="experience-arrow">↗</span>
+
+                        </button>
+
+
+                        <button
+                            class="experience-item"
+                            data-category="cultura">
+
+                            <span class="experience-number">03</span>
+
+                            <div>
+                                <strong>Cultura</strong>
+                                <small>Histórias que permanecem.</small>
+                            </div>
+
+                            <span class="experience-arrow">↗</span>
+
+                        </button>
+
+
+                        <button
+                            class="experience-item"
+                            data-category="natureza">
+
+                            <span class="experience-number">04</span>
+
+                            <div>
+                                <strong>Natureza</strong>
+                                <small>Respirar, explorar e fotografar.</small>
+                            </div>
+
+                            <span class="experience-arrow">↗</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- CARROSSEL -->
+
+                    <div class="experience-gallery">
+
+                        <div class="gallery-image-wrapper">
+
+                            <img
+                                id="galleryImage"
+                                src="img/aventura1.jpg"
+                                alt="Experiência de aventura em Boituva"
+                            >
+
+                            <div class="image-number">
+
+                                <span id="currentImage">
+                                    01
+                                </span>
+
+                                <span>/</span>
+
+                                <span>
+                                    04
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="gallery-info">
+
+                            <div>
+
+                                <span
+                                    class="gallery-category"
+                                    id="galleryCategory">
+                                    AVENTURA
+                                </span>
+
+                                <h3 id="galleryTitle">
+                                    Sinta a adrenalina.
+                                </h3>
+
+                                <p id="galleryDescription">
+                                    Paraquedismo e experiências que
+                                    transformam um simples passeio
+                                    em uma lembrança para a vida.
+                                </p>
+
+                            </div>
+
+
+                            <div class="gallery-controls">
+
+                                <button id="previousImage">
+                                    ←
+                                </button>
+
+                                <div class="gallery-dots">
+
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+
+                                </div>
+
+                                <button id="nextImage">
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat">
+
+                    <strong>01</strong>
+
+                    <span>
+                        roteiro exclusivo
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>11</strong>
+
+                    <span>
+                        momentos
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>10h</strong>
+
+                    <span>
+                        de experiência
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>∞</strong>
+
+                    <span>
+                        memórias
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ROTEIRO
+        ========================== -->
+
+        <section class="route-section" id="roteiro">
+
+            <div class="container">
+
+                <div class="section-heading route-heading">
+
+                    <span class="section-label">
+                        O GRANDE DIA
+                    </span>
+
+                    <h2>
+                        Um roteiro pensado
+                        <span>minuto a minuto.</span>
+                    </h2>
+
+                    <p>
+                        Da primeira parada ao último registro,
+                        cada momento faz parte da experiência.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-line"></div>
+                    <div class="timeline-progress" id="timelineProgress"></div>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            01
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                07:00
+                            </span>
+
+                            <h3>
+                                Embarque
+                            </h3>
+
+                            <p>
+                                Igreja Matriz São Roque – Boituva
+                            </p>
+
+                            <span class="timeline-badge">
+                                início
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            02
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                07:30
+                            </span>
+
+                            <h3>
+                                Café da manhã
+                            </h3>
+
+                            <p>
+                                Pouso da Xoxonha
+                            </p>
+
+                            <span class="timeline-badge paid">
+                                R$ 25,00 por pessoa
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            03
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                08:30
+                            </span>
+
+                            <h3>
+                                Centro Nacional de Paraquedismo
+                            </h3>
+
+                            <p>
+                                Área de aventura e observação.
+                            </p>
+
+                            <span class="timeline-badge free">
+                                entrada gratuita
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            04
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                09:30
+                            </span>
+
+                            <h3>
+                                Paraquedismo
+                            </h3>
+
+                            <p>
+                                Observação das atividades e
+                                registros fotográficos.
+                            </p>
+
+                            <span class="timeline-badge">
+                                aventura
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            05
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                10:30
+                            </span>
+
+                            <h3>
+                                Museu do Tropeiro
+                            </h3>
+
+                            <p>
+                                Visita cultural.
+                            </p>
+
+                            <span class="timeline-badge free">
+                                entrada gratuita
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            06
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                11:30
+                            </span>
+
+                            <h3>
+                                Centro de Boituva
+                            </h3>
+
+                            <p>
+                                Região central e Igreja Matriz
+                                São Roque.
+                            </p>
+
+                            <span class="timeline-badge">
+                                cultura
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            07
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                12:15
+                            </span>
+
+                            <h3>
+                                Almoço
+                            </h3>
+
+                            <p>
+                                Centro Noblesse.
+                            </p>
+
+                            <span class="timeline-badge">
+                                não incluso
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            08
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                14:00
+                            </span>
+
+                            <h3>
+                                Parque Ecológico Eugênio Walter
+                            </h3>
+
+                            <p>
+                                Natureza e lazer.
+                            </p>
+
+                            <span class="timeline-badge free">
+                                entrada gratuita
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            09
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                15:30
+                            </span>
+
+                            <h3>
+                                Lazer & fotografia
+                            </h3>
+
+                            <p>
+                                Tempo para aproveitar o parque
+                                e registrar a experiência.
+                            </p>
+
+                            <span class="timeline-badge">
+                                fotografia
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            10
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                16:15
+                            </span>
+
+                            <h3>
+                                Compras & lembranças
+                            </h3>
+
+                            <p>
+                                Casa do Artesão.
+                            </p>
+
+                            <span class="timeline-badge free">
+                                entrada gratuita
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">
+                            11
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-time">
+                                17:00
+                            </span>
+
+                            <h3>
+                                Encerramento
+                            </h3>
+
+                            <p>
+                                Desembarque na Praça da Matriz.
+                            </p>
+
+                            <span class="timeline-badge">
+                                até a próxima
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESERVA
+        ========================== -->
+
+        <section class="reservation" id="reserva">
+
+            <div class="container reservation-content">
+
+                <div class="reservation-text">
+
+                    <span class="section-label">
+                        SUA PRÓXIMA EXPERIÊNCIA
+                    </span>
+
+                    <h2>
+                        Boituva está
+                        <span>te esperando.</span>
+                    </h2>
+
+                    <p>
+                        Escolha a data, informe quantas pessoas
+                        irão participar e deixe o resto com a Expanse.
+                    </p>
+
+                </div>
+
+
+                <form class="reservation-form" id="reservationForm">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Data
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="people">
+                            Viajantes
+                        </label>
+
+                        <select id="people">
+
+                            <option value="1">
+                                1 pessoa
+                            </option>
+
+                            <option value="2">
+                                2 pessoas
+                            </option>
+
+                            <option value="3">
+                                3 pessoas
+                            </option>
+
+                            <option value="4">
+                                4 pessoas
+                            </option>
+
+                            <option value="5">
+                                5 pessoas
+                            </option>
+
+                            <option value="6">
+                                6+ pessoas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn full-btn">
+
+                        Quero reservar
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section class="contact" id="contato">
+
+            <div class="container contact-grid">
+
+                <div>
+
+                    <span class="section-label">
+                        EXPANSE
+                    </span>
+
+                    <h2>
+                        Algumas viagens
+                        terminam.
+                        <span>Essa fica.</span>
+                    </h2>
+
+                    <p>
+                        Entre em contato para saber mais sobre
+                        o roteiro e viver Boituva de um jeito diferente.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-line">
+                        <span>Instagram</span>
+                        <strong>@expanse.viagens</strong>
+                    </div>
+
+                    <div class="contact-line">
+                        <span>E-mail</span>
+                        <strong>contato@expanse.com</strong>
+                    </div>
+
+                    <div class="contact-line">
+                        <span>Localização</span>
+                        <strong>Boituva • SP</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div class="toast" id="toast">
+
+        <span class="toast-icon">
+            ✓
+        </span>
+
+        <div>
+
+            <strong>
+                Experiência selecionada!
+            </strong>
+
+            <p id="toastMessage">
+                Sua solicitação foi recebida.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <div class="footer-logo">
+                    Expanse
+                </div>
+
+                <p>
+                    Mais que destinos:
+                    experiências.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Explorar
+                </h4>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#experiencias">
+                    Experiências
+                </a>
+
+                <a href="#roteiro">
+                    Roteiro
+                </a>
+
+                <a href="#reserva">
+                    Reserva
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Boituva
+                </h4>
+
+                <p>
+                    São Paulo • Brasil
+                </p>
+
+                <p>
+                    Viva o intenso.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Expanse.
+            Projeto acadêmico.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
